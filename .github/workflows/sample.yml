@@ -10,10 +10,10 @@ jobs:
   print-hello-world:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - name: execute echo command
         run: echo "Hello world!"
       - name: execute echo command 2
         run: echo "Hello world!2"
       - name: read sample.txt
-        uses: actions/checkout@v2
         run: cat ../../sample.txt
