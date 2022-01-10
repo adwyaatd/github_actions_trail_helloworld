@@ -14,3 +14,5 @@ jobs:
         run: echo "Hello world!"
       - name: execute echo command 2
         run: echo "Hello world!2"
+      - name: read sample.txt
+        run: cat "sample.txt"
